@@ -42,7 +42,7 @@ resource "aws_db_instance" "cbz_db_instance" {
   max_allocated_storage = 100
   engine               = "mysql"
   engine_version       = "8.0"
-  instance_class       = "db.t3.micro" # Free-tier eligible instance type
+  instance_class       = "db.t3.medium" # Free-tier eligible instance type..........as i change t3.micro to t3.medium
   username             = "admin"
   password             = "Redhat123"
   parameter_group_name = "default.mysql8.0"
